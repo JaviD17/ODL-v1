@@ -1,0 +1,17 @@
+type User {
+    username: String!
+    email: String!
+    macroSructures: [macroStructure!] @relation
+}
+
+type macroStructure {
+    title: String!
+    protein: Int!
+    carb: Int!
+    fat: Int!
+    author: User!
+}
+
+type Query {
+    listMacroStructures: [macroStructure]
+}
