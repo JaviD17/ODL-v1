@@ -9,6 +9,7 @@ type macroStructure {
     protein: Int!
     carb: Int!
     fat: Int!
+    note: String!
     author: User!
 }
 
